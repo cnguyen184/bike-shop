@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🚲 Bike Shop Manager</h1>
+      <p>Browse and manage products, customers and orders</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="toolbar">
+          <label for="dbSelect">Database</label>
+          <select id="dbSelect">
+            <option value="products">Products</option>
+            <option value="customers">Customers</option>
+            <option value="orders">Orders</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Data</h2>
+        <div class="table-wrap">
+          <table id="dataTable">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 id="formTitle">Add new record</h2>
+        <form id="dataForm">
+          <div id="formFields"></div>
+          <div class="form-buttons">
+            <button type="submit" id="submitBtn">Add</button>
+            <button type="button" id="cancelBtn" class="secondary">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div id="toast"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
