@@ -27,7 +27,7 @@ node server.js
 
 Then open http://localhost:3000
 
-To reset the data, stop the server, delete the files in `data/`, and run `node seed.js` again.
+To reset the data to the original dummy data, stop the server and run `npm run reset`.
 
 ## API
 
